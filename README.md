@@ -1,2 +1,16 @@
-# parameterOptimize
-optimize parameters
+### 代码说明
+
+#### solution1
+方法1的核心思想是借助遗传算法对参数进行探索，寻找最优参数。算法步骤如下图所示。
+
+![遗传算法步骤](https://upload-images.jianshu.io/upload_images/10386940-f6a0d1d8226405fa.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/708/format/webp)
+
+> 该方法的优点是有望找到全局最优解；但该方法的不足之处是太耗时。
+
+#### solution2
+方法2的核心思想是贪心式的寻找最优解，借鉴了甲方提出的手动调参的思路。
+
+> 该方法优点是效率很高；但该方法找到的解不能保证是全局最优解。
+
+#### 备注
+通过多次实验发现，甲方给定的参数取值范围并不能使得条件满足。因此方法2中通过动态改变参数取值上界的方法找到了满足条件的解。
